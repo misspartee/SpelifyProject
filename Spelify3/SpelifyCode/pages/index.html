@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <!--Import Google Icon Font-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="materialize.css" media="screen,projection"/>
+        <!--Import our own css file-->
+        <link type="text/css" rel="stylesheet" href="SpelifyStyle.css" media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="materialize.js"></script>
+    </head>
+    <body>
+
+    <!-- Nav bar with logo -->
+    <nav>
+        <div class="nav-wrapper white">
+            <a href="#" class="brand-logo center"><img style="height: 60px" id="logo" src="../images/logo2.png"/></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="cyan lighten-5" href="sass.html">Subscribe</a></li>
+
+            </ul>
+
+            <!-- search form inside nav bar -->
+            <form>
+                <div class="input-field right-align ">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons cyan lighten-5">search</i></label>
+                    <i class="material-icons">close</i>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+    <!-- home page slider element with 4 genres -->
+    <div class="row center-aligned" style="background-image: url(../images/music.png) ">
+
+        <div class="col s12">
+            <div class="card-panel cyan lighten-5 z-depth-1">
+
+            </div>
+        </div>
+
+        <div class="col s12 " >
+            <div class="card-panel blue lighten-5 z-depth-3 "  >
+                <div class="row ">
+                    <div class="col s6 offset-s3">
+                         <!-- notice the "circle" class -->
+
+                        <div class="slider" style="width:100%;">
+                            <ul class="slides circle">
+                                <li>
+                                    <a href="jazz.html"><img src="../images/jazz.png" class="circle responsive-img" ></a>
+                                    <div class="caption center-align">
+                                        <h3>Electric Jazz</h3>
+                                        <h5 class="light grey-text text-lighten-3"><span class="black-box">Enter a world of smooth sound.</span></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="hiphop.html"><img src="../images/hiphop.jpeg" class="circle responsive-img"></a> <!-- random image -->
+                                    <div class="caption left-align">
+                                        <h3>Hip Hop</h3>
+                                        <h5 class="light grey-text text-lighten-3" ><span class="black-box">Bop to the beat.</span></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="pop.html"><img src="../images/pop.jpeg" class="circle responsive-img"></a> <!-- random image -->
+                                    <div class="caption right-align">
+                                        <h3>Pop</h3>
+                                        <h5 class="light grey-text text-lighten-3"><span class="black-box">You know why we're here.</span></h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="gospel.html"><img src="../images/gospel.jpeg" class="circle responsive-img"> </a><!-- random image -->
+                                    <div class="caption center-align">
+                                        <h3>The Gospel</h3>
+                                        <h5 class="light grey-text text-lighten-3"><span class="black-box">Uplifting and love</span></h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- slide show of each of the 4 Genres -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="col s12 ">`
+        <div class="card-panel cyan lighten-5 z-depth-1">
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!--Materializecss Slider-->
+    <script>
+        $(document).ready(function () {
+            $('.slider').slider({full_width: true});
+        });
+    </script>
+
+    </body>
+</html>
